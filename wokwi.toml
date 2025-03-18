@@ -1,8 +1,0 @@
-[wokwi]
-version = 1
-firmware = "ldr_led.ino"
-elf = ".pio/build/uno/firmware.elf"
-
-# Optional: Configure serial ports
-# [wokwi.serial]
-# monitor = true     # Show serial monitor at startup
