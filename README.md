@@ -1,1 +1,1 @@
-It uses censors to detect the brightness
+It uses censors to detect the brightness.
