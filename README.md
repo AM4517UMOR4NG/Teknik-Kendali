@@ -1,1 +1,2 @@
-Tugas teknik kendali.
+Repository untuk simpan
+tugas teknik kendali.
