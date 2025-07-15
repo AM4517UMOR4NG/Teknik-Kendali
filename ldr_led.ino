@@ -1,8 +1,6 @@
-//Mendefinisikan pin
 const int ldrPin = A0;    // Pin analog untuk LDR
-const int ledPin = 9;     // Pin PWM untuk LED
+const int ledPin = 9;     // Pin PWM untuk 
 
-//Variabel untuk menyimpan nilai
 int ldrValue = 0;        // Nilai pembacaan LDR
 int ledBrightness = 0;   // Kecerahan LED (0-255)
 
