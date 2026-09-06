@@ -1,12 +1,12 @@
-# 💡 Smart LED Dimmer with LDR Sensor (Arduino Uno)
+# Smart LED Dimmer with LDR Sensor (Arduino Uno)
 
 An automated ambient-light-responsive LED dimmer system built on Arduino Uno and simulated via [Wokwi](https://wokwi.com/). The project dynamically adjusts LED brightness based on readings from a Light Dependent Resistor (LDR).
 
 ---
 
-## 📌 How It Works
+## How It Works
 
-LED brightness is driven by PWM (*Pulse Width Modulation*) using thresholding and linear interpolation via `map()`:
+LED brightness is driven by PWM (Pulse Width Modulation) using thresholding and linear interpolation via `map()`:
 
 * **Dark (`LDR < 300`)**: Full brightness (`255`).
 * **Ambient / Transition (`300 ≤ LDR ≤ 700`)**: Inversely proportional brightness (`0–255`).
@@ -14,7 +14,7 @@ LED brightness is driven by PWM (*Pulse Width Modulation*) using thresholding an
 
 ---
 
-## 🛠️ Components & Hardware
+## Components & Hardware
 
 | Component | Identifier / Value | Function |
 | :--- | :--- | :--- |
@@ -26,21 +26,21 @@ LED brightness is driven by PWM (*Pulse Width Modulation*) using thresholding an
 
 ---
 
-## 🔌 Wiring & Pinout
+## Wiring & Pinout
 
 ### LED Circuit
-* **Arduino Pin 9 (PWM)** ➔ 220 Ω Resistor ➔ **LED Anode (+)**
-* **LED Cathode (-)** ➔ **Arduino GND**
+* **Arduino Pin 9 (PWM)** -> 220 Ω Resistor -> **LED Anode (+)**
+* **LED Cathode (-)** -> **Arduino GND**
 
 ### LDR Sensor Circuit
-* **Sensor VCC** ➔ **Arduino 5V**
-* **Sensor GND** ➔ **Arduino GND**
-* **Signal Pin (S)** ➔ **Arduino Analog Pin A0**
-* **Signal Pin (S)** ➔ 10 kΩ Resistor ➔ **Arduino GND**
+* **Sensor VCC** -> **Arduino 5V**
+* **Sensor GND** -> **Arduino GND**
+* **Signal Pin (S)** -> **Arduino Analog Pin A0**
+* **Signal Pin (S)** -> 10 kΩ Resistor -> **Arduino GND**
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 ├── diagram.json      # Wokwi circuit elements and wiring configuration
